@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		EB489675259076FE00F2DAD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB489674259076FE00F2DAD3 /* ContentView.swift */; };
 		EB4896772590770100F2DAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4896762590770100F2DAD3 /* Assets.xcassets */; };
 		EB48967A2590770100F2DAD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4896792590770100F2DAD3 /* Preview Assets.xcassets */; };
+		EB489688259077F800F2DAD3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB489687259077F800F2DAD3 /* HomeView.swift */; };
+		EB48968C2590797700F2DAD3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48968B2590797700F2DAD3 /* Extensions.swift */; };
+		EB48969025908DAD00F2DAD3 /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = EB48968F25908DAD00F2DAD3 /* AFNetworking */; };
+		EB48969325908DE300F2DAD3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48969225908DE300F2DAD3 /* PostModel.swift */; };
+		EB48969A25908F9300F2DAD3 /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48969925908F9300F2DAD3 /* APICalls.swift */; };
+		EB48969D2590909500F2DAD3 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48969C2590909500F2DAD3 /* EndPoint.swift */; };
+		EB4896A0259096A500F2DAD3 /* GetPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48969F259096A500F2DAD3 /* GetPostsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,12 @@
 		EB4896762590770100F2DAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4896792590770100F2DAD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB48967B2590770100F2DAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB489687259077F800F2DAD3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB48968B2590797700F2DAD3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EB48969225908DE300F2DAD3 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		EB48969925908F9300F2DAD3 /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
+		EB48969C2590909500F2DAD3 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		EB48969F259096A500F2DAD3 /* GetPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB48969025908DAD00F2DAD3 /* AFNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +66,11 @@
 		EB489671259076FE00F2DAD3 /* AFNetworkingCRUD */ = {
 			isa = PBXGroup;
 			children = (
+				EB489686259077CA00F2DAD3 /* Extensions */,
+				EB4896852590779C00F2DAD3 /* APICalling */,
+				EB4896842590779100F2DAD3 /* ViewModel */,
+				EB4896832590778300F2DAD3 /* Model */,
+				EB4896822590776E00F2DAD3 /* View */,
 				EB489672259076FE00F2DAD3 /* AFNetworkingCRUDApp.swift */,
 				EB489674259076FE00F2DAD3 /* ContentView.swift */,
 				EB4896762590770100F2DAD3 /* Assets.xcassets */,
@@ -67,6 +86,47 @@
 				EB4896792590770100F2DAD3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB4896822590776E00F2DAD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB489687259077F800F2DAD3 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB4896832590778300F2DAD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB48969225908DE300F2DAD3 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB4896842590779100F2DAD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB48969F259096A500F2DAD3 /* GetPostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB4896852590779C00F2DAD3 /* APICalling */ = {
+			isa = PBXGroup;
+			children = (
+				EB48969925908F9300F2DAD3 /* APICalls.swift */,
+				EB48969C2590909500F2DAD3 /* EndPoint.swift */,
+			);
+			path = APICalling;
+			sourceTree = "<group>";
+		};
+		EB489686259077CA00F2DAD3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB48968B2590797700F2DAD3 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +145,9 @@
 			dependencies = (
 			);
 			name = AFNetworkingCRUD;
+			packageProductDependencies = (
+				EB48968F25908DAD00F2DAD3 /* AFNetworking */,
+			);
 			productName = AFNetworkingCRUD;
 			productReference = EB48966F259076FE00F2DAD3 /* AFNetworkingCRUD.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +175,9 @@
 				Base,
 			);
 			mainGroup = EB489666259076FE00F2DAD3;
+			packageReferences = (
+				EB48968E25908DAD00F2DAD3 /* XCRemoteSwiftPackageReference "AFNetworking" */,
+			);
 			productRefGroup = EB489670259076FE00F2DAD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB489688259077F800F2DAD3 /* HomeView.swift in Sources */,
+				EB48969325908DE300F2DAD3 /* PostModel.swift in Sources */,
+				EB48969A25908F9300F2DAD3 /* APICalls.swift in Sources */,
+				EB4896A0259096A500F2DAD3 /* GetPostsViewModel.swift in Sources */,
 				EB489675259076FE00F2DAD3 /* ContentView.swift in Sources */,
 				EB489673259076FE00F2DAD3 /* AFNetworkingCRUDApp.swift in Sources */,
+				EB48969D2590909500F2DAD3 /* EndPoint.swift in Sources */,
+				EB48968C2590797700F2DAD3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +253,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -242,6 +315,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -257,7 +331,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -328,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB48968E25908DAD00F2DAD3 /* XCRemoteSwiftPackageReference "AFNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AFNetworking/AFNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB48968F25908DAD00F2DAD3 /* AFNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB48968E25908DAD00F2DAD3 /* XCRemoteSwiftPackageReference "AFNetworking" */;
+			productName = AFNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB489667259076FE00F2DAD3 /* Project object */;
 }

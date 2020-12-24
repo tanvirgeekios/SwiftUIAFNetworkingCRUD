@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AFNetworkingCRUDApp: App {
+    @AppStorage("isDarkMood") private var isDarkMood = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView()
+            }.environment(\.colorScheme, isDarkMood ? .dark : .light)
         }
     }
 }
